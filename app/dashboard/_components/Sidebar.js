@@ -13,14 +13,14 @@ import {
   Clipboard,
 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Sidebar = () => {
   return (
     <div className="h-screen text-gray-400 p-7">
-      {/* <Image src={'/logo.svg'} alt='logo' width={170} height={120} /> */}
       <div className="flex gap-3 items-center">
-        <div className="bg-gray-200 w-[45px] h-[45px] p-2 flex justify-center items-center rounded-full ">
-          <User className="h-12 w-12 text-black" />
+        <div className="bg-gray-200 w-[45px] h-[45px] p-1 flex justify-center items-center rounded-full ">
+          <Image src="/images/pic.png" alt='logo' width={170} height={120} />
         </div>
         <div>
           <h1 className="text-white">Anubhooti Pandey</h1>

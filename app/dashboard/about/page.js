@@ -8,9 +8,9 @@ export default function About() {
         <Card className="shadow-lg rounded-lg bg-gray-900 border-0 p-6 mb-6">
           <CardHeader>
             <div className="flex items-center gap-4">
-              <Avatar className="w-20 h-20 rounded-full">
+              <Avatar className="w-[100px] h-[100px] rounded-full">
                 <img
-                  src="/images/pic.png" 
+                  src="/images/pic2.png" 
                   alt="Anubhooti Pandey"
                   className="w-full h-full rounded-full"
                 />

@@ -29,7 +29,7 @@ export default function Education() {
 
         <div className="space-y-6">
           {educationData.map((edu, index) => (
-            <Card key={index} className="shadow-lg rounded-lg bg-gray-900 border-0">
+            <Card key={index} className="shadow-lg rounded-lg border-2 bg-transparent border-[#B6FFFA]">
               <CardHeader>
                 <CardTitle className="text-xl font-semibold text-[#9abebe]">
                   {edu.institution}
