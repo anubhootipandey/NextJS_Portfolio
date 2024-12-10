@@ -27,7 +27,7 @@ export default function Skills() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {skillsData.map((category, index) => (
-            <Card key={index} className="shadow-lg rounded-lg bg-transparent border-2 border-white">
+            <Card key={index} className="shadow-lg rounded-lg bg-gray-900 border-0">
               <CardHeader>
                 <CardTitle className="text-lg font-medium text-white">
                   {category.category}

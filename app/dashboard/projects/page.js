@@ -6,37 +6,45 @@ export default function Projects() {
     {
       title: "E-Commerce Website",
       description: "A fully functional e-commerce platform with payment gateway integration, user authentication, and product management.",
-      techStack: ["React.js", "Node.js", "MongoDB", "Tailwind CSS"],
-      image: "/images/ecommerce.jpg",
-      liveDemo: "https://example-ecommerce.com",
-      sourceCode: "https://github.com/example/ecommerce",
+      techStack: ["React.js", "Axios", "ContextAPI", "Tailwind CSS", "Material UI"],
+      image: "/images/e-commerce.png",
+      liveDemo: "https://e-commerce-website-five-gamma.vercel.app/",
+      sourceCode: "https://github.com/anubhootipandey/E-Commerce-Website",
     },
     {
       title: "Portfolio Website",
       description: "A personal portfolio to showcase projects, skills, and contact information with a modern UI/UX design.",
       techStack: ["Next.js", "ShadCN UI", "Framer Motion"],
-      image: "/images/portfolio.jpg",
+      image: "/images/portfolio.png",
       liveDemo: "https://example-portfolio.com",
       sourceCode: "https://github.com/example/portfolio",
     },
     {
       title: "Task Management App",
       description: "A productivity app for managing tasks, setting priorities, and tracking progress with a user-friendly interface.",
-      techStack: ["Vue.js", "Firebase", "Vuetify"],
-      image: "/images/taskapp.jpg",
-      liveDemo: "https://example-taskapp.com",
-      sourceCode: "https://github.com/example/taskapp",
+      techStack: ["React.js", "CSS", "LocalStorage"],
+      image: "/images/task.png",
+      liveDemo: "https://react-todo-ten-tau.vercel.app/",
+      sourceCode: "https://github.com/anubhootipandey/react-crud-application",
+    },
+    {
+      title: "Armstrong Checker App",
+      description: "A productivity app for managing tasks, setting priorities, and tracking progress with a user-friendly interface.",
+      techStack: ["HTML", "CSS", "Javascript"],
+      image: "/images/armstrong.png",
+      liveDemo: "https://react-todo-ten-tau.vercel.app/",
+      sourceCode: "https://github.com/anubhootipandey/react-crud-application",
     },
   ];
 
   return (
     <div className="container mx-auto p-6">
-      <div className="max-w-4xl mx-auto">
-        <h1 className="text-3xl font-semibold text-gray-800 mb-6">Projects</h1>
+      <div className="max-w-4xl mx-auto"> 
+        <h1 className="text-3xl font-semibold text-gray-300 mb-6">Projects</h1>
 
         <div className="space-y-6">
           {projectsData.map((project, index) => (
-            <Card key={index} className="shadow-lg rounded-lg bg-white">
+            <Card key={index} className="rounded-lg border-0 bg-gray-900">
               <CardHeader>
                 <div className="relative h-52 w-full overflow-hidden rounded-t-lg">
                   <img
@@ -45,21 +53,21 @@ export default function Projects() {
                     className="h-full w-full object-cover"
                   />
                 </div>
-                <CardTitle className="text-xl font-medium text-gray-800 mt-4">
+                <CardTitle className="text-xl font-medium text-white mt-6">
                   {project.title}
                 </CardTitle>
-                <CardDescription className="text-gray-500">
+                <CardDescription className="text-gray-400">
                   {project.description}
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  <h4 className="font-semibold text-gray-700">Tech Stack:</h4>
+                  <h4 className="font-semibold text-gray-300">Tech Stack:</h4>
                   <div className="flex flex-wrap gap-2">
                     {project.techStack.map((tech, idx) => (
                       <span
                         key={idx}
-                        className="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-medium"
+                        className="px-3 py-1 bg-gray-950 text-gray-400 rounded-full text-sm font-medium"
                       >
                         {tech}
                       </span>
@@ -73,7 +81,7 @@ export default function Projects() {
                     href={project.liveDemo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline"
+                    className="text-gray-200 hover:underline"
                   >
                     Live Demo
                   </a>
@@ -83,7 +91,7 @@ export default function Projects() {
                     href={project.sourceCode}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline"
+                    className="text-gray-200 hover:underline"
                   >
                     Source Code
                   </a>
