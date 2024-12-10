@@ -12,7 +12,7 @@ export default function Skills() {
     },
     {
       category: "UI Libraries",
-      skills: ["ShadCN UI", "Material-UI", "Tailwind CSS", "Bootstrap", "Ant Design"],
+      skills: ["ShadCN UI", "Material-UI", "Tailwind CSS", "Bootstrap", "Ant Design", "Framer Motion"],
     },
     {
       category: "Tools & Platforms",

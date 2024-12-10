@@ -16,8 +16,8 @@ export default function Projects() {
       description: "A personal portfolio to showcase projects, skills, and contact information with a modern UI/UX design.",
       techStack: ["Next.js", "ShadCN UI", "Framer Motion"],
       image: "/images/portfolio.png",
-      liveDemo: "https://example-portfolio.com",
-      sourceCode: "https://github.com/example/portfolio",
+      liveDemo: "https://next-js-learning-one-rose.vercel.app/",
+      sourceCode: "https://github.com/anubhootipandey/NextJS_Learning",
     },
     {
       title: "Task Management App",
@@ -29,11 +29,11 @@ export default function Projects() {
     },
     {
       title: "Armstrong Checker App",
-      description: "A productivity app for managing tasks, setting priorities, and tracking progress with a user-friendly interface.",
+      description: "The 'Armstrong Checker' web application with a clean, user-friendly interface, allowing users to easily input a number and verify if it is an Armstrong number. The design is minimalistic, responsive, and ensures a smooth experience across devices.",
       techStack: ["HTML", "CSS", "Javascript"],
       image: "/images/armstrong.png",
-      liveDemo: "https://react-todo-ten-tau.vercel.app/",
-      sourceCode: "https://github.com/anubhootipandey/react-crud-application",
+      liveDemo: "https://armstrongchecker.vercel.app/",
+      sourceCode: "https://github.com/anubhootipandey/armstrongchecker",
     },
   ];
 
@@ -44,7 +44,7 @@ export default function Projects() {
 
         <div className="space-y-6">
           {projectsData.map((project, index) => (
-            <Card key={index} className="rounded-lg border-0 bg-gray-900">
+            <Card key={index} className="rounded-lg border-2 bg-transparent">
               <CardHeader>
                 <div className="relative h-52 w-full overflow-hidden rounded-t-lg">
                   <img
@@ -81,7 +81,7 @@ export default function Projects() {
                     href={project.liveDemo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-200 hover:underline"
+                    className="text-white hover:underline"
                   >
                     Live Demo
                   </a>
@@ -91,7 +91,7 @@ export default function Projects() {
                     href={project.sourceCode}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-200 hover:underline"
+                    className="text-white hover:underline"
                   >
                     Source Code
                   </a>

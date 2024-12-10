@@ -20,7 +20,7 @@ const Sidebar = () => {
     <div className="h-screen text-gray-400 p-7">
       <div className="flex gap-3 items-center">
         <div className="bg-gray-200 w-[45px] h-[45px] p-1 flex justify-center items-center rounded-full ">
-          <Image src="/images/pic.png" alt='logo' width={170} height={120} />
+          <Image src="/images/pic.png" alt="logo" width={170} height={120} />
         </div>
         <div>
           <h1 className="text-white">Anubhooti Pandey</h1>
@@ -29,10 +29,12 @@ const Sidebar = () => {
       </div>
 
       <div className="mt-10 text-sm">
-        <Button className="w-full text-black hover:bg-yellow-300 bg-yellow-200">
-          <Clipboard />
-          Download Resume
-        </Button>
+        <Link href="/dashboard/resume" passHref>
+          <Button className="w-full text-black hover:bg-yellow-300 bg-yellow-200">
+            <Clipboard />
+            Download Resume
+          </Button>
+        </Link>
 
         <Link href="/dashboard/about" passHref>
           <div className="flex gap-2 items-center p-3 mt-4 hover:bg-slate-900 rounded-lg cursor-pointer">
@@ -59,22 +61,22 @@ const Sidebar = () => {
           </div>
         </Link>
         <Link href="/dashboard/work-experience" passHref>
-        <div className="flex gap-2 items-center p-3 mt-1 hover:bg-slate-900 rounded-lg cursor-pointer">
-          <Briefcase />
-          <h2>Work Experience</h2>
-        </div>
+          <div className="flex gap-2 items-center p-3 mt-1 hover:bg-slate-900 rounded-lg cursor-pointer">
+            <Briefcase />
+            <h2>Work Experience</h2>
+          </div>
         </Link>
         <Link href="/dashboard/certifications" passHref>
-        <div className="flex gap-2 items-center p-3 mt-1 hover:bg-slate-900 rounded-lg cursor-pointer">
-          <FileText />
-          <h2>Certifications</h2>
-        </div>
+          <div className="flex gap-2 items-center p-3 mt-1 hover:bg-slate-900 rounded-lg cursor-pointer">
+            <FileText />
+            <h2>Certifications & Achievements</h2>
+          </div>
         </Link>
         <Link href="/dashboard/contact" passHref>
-        <div className="flex gap-2 items-center p-3 mt-1 hover:bg-slate-900 rounded-lg cursor-pointer">
-          <Phone />
-          <h2>Contact</h2>
-        </div>
+          <div className="flex gap-2 items-center p-3 mt-1 hover:bg-slate-900 rounded-lg cursor-pointer">
+            <Phone />
+            <h2>Contact</h2>
+          </div>
         </Link>
       </div>
     </div>

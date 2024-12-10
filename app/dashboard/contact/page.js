@@ -15,7 +15,7 @@ export default function Contact() {
               Get in Touch
             </CardTitle>
           </CardHeader>
-          <CardContent className="bg-gray-900 rounded-[20px] p-6">
+          <CardContent className="bg-black rounded-[20px] p-6">
             <form className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-300">
