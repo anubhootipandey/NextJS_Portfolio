@@ -10,7 +10,7 @@ export default function About() {
             <div className="flex items-center gap-4">
               <Avatar className="w-[100px] h-[100px] rounded-full">
                 <img
-                  src="/images/pic2.png" 
+                  src="/images/pic.jpg" 
                   alt="Anubhooti Pandey"
                   className="w-full h-full rounded-full"
                 />

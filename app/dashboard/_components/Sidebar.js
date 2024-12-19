@@ -1,4 +1,4 @@
-// import Image from 'next/image';
+import Image from "next/image";
 import React from "react";
 import { Button } from "../../..//components/ui/button";
 import {
@@ -9,18 +9,17 @@ import {
   Code,
   Info,
   Phone,
-  User,
-  Clipboard,
+  Clipboard
 } from "lucide-react";
+import { SiGnusocial } from "react-icons/si";
 import Link from "next/link";
-import Image from "next/image";
 
 const Sidebar = () => {
   return (
     <div className="h-screen text-gray-400 p-7">
       <div className="flex gap-3 items-center">
         <div className="bg-gray-200 w-[45px] h-[45px] p-1 flex justify-center items-center rounded-full ">
-          <Image src="/images/pic.png" alt="logo" width={170} height={120} />
+          <Image src="/images/pic.jpg" className="rounded-full" alt="logo" width={170} height={120} />
         </div>
         <div>
           <h1 className="text-white">Anubhooti Pandey</h1>
@@ -76,6 +75,12 @@ const Sidebar = () => {
           <div className="flex gap-2 items-center p-3 mt-1 hover:bg-slate-900 rounded-lg cursor-pointer">
             <Phone />
             <h2>Contact</h2>
+          </div>
+        </Link>
+        <Link href="/dashboard/socials" passHref>
+          <div className="flex gap-2 items-center p-3 mt-1 hover:bg-slate-900 rounded-lg cursor-pointer">
+            <SiGnusocial />
+            <h2>Socials</h2>
           </div>
         </Link>
       </div>
