@@ -10,6 +10,13 @@ export default function WorkExperience() {
         "Developed user-friendly web interfaces, implemented responsive designs, and optimized performance for modern web applications.",
     },
     {
+      role: "Front-End Software Engineering Virtual Programme",
+      company: "Skyscanner",
+      duration: "Dec 2024 - Dec 2024",
+      description:
+        "Completed a job simulation where I built a web application using React as a front-end engineer at Skyscanner.",
+    },
+    {
       role: "UK Developer and Technology Virtual Experience Programme",
       company: "Accenture",
       duration: "Nov 2024 - Dec 2024",
