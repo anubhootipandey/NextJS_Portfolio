@@ -18,17 +18,17 @@ function DashboardLayout({ children }) {
         <div className="p-10">{children}</div>
       </div>
       {isHomePage && ( 
-        <div className="md:ml-64 mt-2 flex flex-col items-center justify-center">
-          <div className="grid grid-cols-2 gap-2">
+        <div className="md:ml-64 mt-2 flex flex-col items-center text-center justify-center">
+          <div className="grid grid-cols-2 gap-2 sm:mx-4 md:mx-8">
             <Image src="/images/home4.jpg" alt="home" width={180} height={160} />
             <Image src="/images/home1.jpg" alt="home" width={180} height={160} />
             <Image src="/images/home2.jpg" alt="home" width={180} height={160} />
             <Image src="/images/home3.jpg" alt="home" width={180} height={160} />
           </div>
-          <h1 className="text-5xl mt-8 text-white font-bold">
+          <h1 className="text-2xl sm:text-5xl mt-8 text-white font-bold">
             Welcome to My Portfolio!
           </h1>
-          <p className="mt-4 text-2xl text-yellow-300">
+          <p className="mt-4 text-xl sm:text-2xl text-yellow-300">
             Explore my projects, skills, and more using the sidebar navigation.
           </p>
         </div>
