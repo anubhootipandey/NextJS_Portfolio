@@ -28,6 +28,14 @@ export default function Projects() {
       sourceCode: "https://github.com/anubhootipandey/react-crud-application",
     },
     {
+      title: "Weather App",
+      description: "This weather app provides real-time forecasts, displaying current conditions, hourly predictions, and additional weather details for any city.",
+      techStack: ["HTML", "CSS", "jQuery", "OpenWeatherAPI"],
+      image: "/images/weather.png",
+      liveDemo: "https://weather-app-iota-murex-42.vercel.app/",
+      sourceCode: "https://github.com/anubhootipandey/Weather-App",
+    },
+    {
       title: "Armstrong Checker App",
       description: "The 'Armstrong Checker' web application with a clean, user-friendly interface, allowing users to easily input a number and verify if it is an Armstrong number. The design is minimalistic, responsive, and ensures a smooth experience across devices.",
       techStack: ["HTML", "CSS", "Javascript"],
